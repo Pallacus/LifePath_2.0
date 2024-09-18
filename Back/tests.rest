@@ -1,0 +1,6 @@
+@port = 10000
+@host = http://localhost:{{port}}
+
+
+# Register
+GET {{host}}/
