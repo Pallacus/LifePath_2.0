@@ -3,22 +3,22 @@
 
 
 ### /register
-GET {{host}}/register
+GET {{host}}/api/register
 
 ### /login
-GET {{host}}/login
+GET {{host}}/api/login
 
 ### /personal_data
-GET {{host}}/personal_data
+GET {{host}}/api/personal_data
 
 ### /experience
-GET {{host}}/experience
+GET {{host}}/api/experience
 
 ### /training
-GET {{host}}/training
+GET {{host}}/api/training
 
 ### /projects
-GET {{host}}/projects
+GET {{host}}/api/projects
 
 ### /resume
-GET {{host}}/resume
+GET {{host}}/api/resume
