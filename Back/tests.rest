@@ -2,5 +2,23 @@
 @host = http://localhost:{{port}}
 
 
-# Register
-GET {{host}}/
+### /register
+GET {{host}}/register
+
+### /login
+GET {{host}}/login
+
+### /personal_data
+GET {{host}}/personal_data
+
+### /experience
+GET {{host}}/experience
+
+### /training
+GET {{host}}/training
+
+### /projects
+GET {{host}}/projects
+
+### /resume
+GET {{host}}/resume
