@@ -1,10 +1,14 @@
-const express = require("express") /* Importem express per poder-lo utilitzar. */
+const http = require('node:http');
 
-var app = express() /* Creem una variable per utilitzar express. */
+const app = require('./src/app');
 
-app.get("/", function (request, response) { /* Aquesta es la estructura bàsica d'una petició web. */
-    response.send("Resposta activa!")
-})
-app.listen(10000, function () { /* Redirigim les peticions entrants d'un port concret. */
-    console.log("Started application on port %d", 10000)
+require('dotenv').config();
+
+const server = http.createServer(app);
+
+const port = process.env.PORT || 3000;
+server.listen(port);
+
+server.on('listening', () => {
+    console.log(`Server listening on port ${port}`);
 });
